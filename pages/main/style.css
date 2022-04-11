@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    /* background-color: red; */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #ffffff;
+     margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    background-color: red;
+    outline: 1px solid blue;
+}
+/* ==================== HEADER ==================== */
+.header {
+    padding-top: 60px;
+    background-color: blue;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+    /* position: relative; */
+}
+
+.logo-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+.logo-subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+.nav {
+    margin-left: auto;
+   outline: 1px solid yellow;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    }
+.nav-item {
+    margin-right: 30px;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+    padding-top: 223px;
+    background-color: yellow;
+}
+.hero-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+
+    width: 310px;
+    color: #ffffff;
+    background-color: blue;
+    margin-bottom: 42px;
+}
+
+.hero-text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    width: 460px;
+    color: #cdcdcd;
+    margin-bottom: 42px;
+    outline: 1px solid blue;
+}
+.btn {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    width: 207px;
+    height: 52px;
+    padding: 15px 45px;
+    text-align: center;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 0;
+    background: #f1cdb3;
+    color: #292929;
+}
+/* ==================== ABOUT ==================== */
+.about-title {
+    
+}
