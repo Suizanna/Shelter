@@ -1,0 +1,155 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --timingFn: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    outline: 1px solid blue;
+}
+/* ==================== HEADER ==================== */
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header-container {
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+    /* для центр. ссылок */
+    align-items: center;
+    text-align: center;
+}
+.logo-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    cursor: pointer;
+
+    /* display: flex;
+    align-items: center; */
+}
+
+.logo-subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #292929;
+    margin-top: 10px;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+}
+.nav {
+    margin-left: auto;
+    /* margin-top: 60px; */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 35px;
+
+}
+
+.nav-link {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+    transition: all 250ms var(--timingFn);
+}
+
+.nav-link:hover {
+    color: #cdcdcd;
+}
+/* ==================== PETS ==================== */
+.pets-section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.pets-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    color: #545454;
+    margin-bottom: 45px;
+}

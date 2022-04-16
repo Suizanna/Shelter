@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>shelter</title>
+    <title>Shelter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-    <main>
-        <!-- HEADER -->
-            <div class="box">
-        <header class="header">
-            <div class="container header-container">
-                <div class="logo">
+    <!-- HEADER -->  
+    <div class="box-color">
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"></a>
                 <h1 class="logo-title">Cozy House</h1>
                 <p class="logo-subtitle">Shelter for pets in Boston</p>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#" class="nav-link">About the shelter</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Our pets</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Help the shelter</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-                    </ul>
-                </nav>
             </div>
-        </header>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="#" class="nav-link">About the shelter</a></li>
+                    <li class="nav-item"><a href="../pets/index.html" class="nav-link">Our pets</a></li>
+                    <li class="nav-item"><a href="#help" class="nav-link">Help the shelter</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>   
         <!-- HERO -->
         <section class="hero-section">
         <div class="container">
@@ -46,8 +46,10 @@
         <section class="about-section">
             <div class="container">
         <div class="about-content-all">
-                <div class="about__bg"></div>
-        
+                <!-- <div class="about__bg"></div> -->
+        <div class="about__image">
+            <img src="../../assets/images/about-pets.png" alt="cute pet image">
+        </div>
                 <div class="about-content-text">
                     <h3 class="about-title title">About the shelter “Cozy House”</h3>
                     <p class="about-text subtext">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The
@@ -63,24 +65,43 @@
         </div>
         </section>
         <!-- PETS -->
-        <section class="pets-section">
+        <section class="pets-section" id="pets">
             <div class="container">
             <h3 class="pets-title title">Our friends who <br>
             are looking for a house</h3>
 
-            <ul class="pets-list">
-                <li class="pets-item">
-                    <img class="list__image"  alt="">
-                </li>
-                <li>
-                    <img class="list__image"  alt="">
-                </li>
-                <li>
-                    <img class="list__image"  alt="">
-                </li>
-            </ul>
-            <button class="btn pets-btn" type="button">
-                Get to know the rest</button>
+            <div class="pets__slider">
+                <button class="btn-arrow btn-arrow_left"></button>
+
+                <div class="pets__row">
+                    <div class="pets__card">
+                        <div class="pets__image">
+                            <img src="../../assets/images/pets-katrine.png" alt="katrine image">
+                        </div>
+                        <span class="pets__name">Katrine</span>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">
+                        <div class="pets__image">
+                            <img src="../../assets/images/pets-jennifer.png" alt="jennifer image">
+                        </div>
+                        <span class="pets__name">Jennifer</span>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">
+                        <div class="pets__image">
+                            <img src="../../assets/images/pets-woody.png" alt="woody image">
+                        </div>
+                        <span class="pets__name">Woody</span>
+                        <button class="button">Learn more</button>
+                    </div>
+                </div>  
+
+                <button class="btn-arrow"></button>
+            </div> 
+
+              <a class="btn pets-btn  " href="../pets/index.html">Get to know the rest</a>
+           
             </div>
         </section>
         <!-- HELP -->
@@ -88,53 +109,63 @@
             <div class="container help-box">
                 <h3 class="help-title title">How you can help <br>
                 our shelter</h3>
-                <!-- box -->
-                <div class="help-list-box">
-                <ul class="help-list">
-                    <li class="help-item">
-                        <div class="help-logo-pet"></div>
-                        <h4 class="help-text">Pet food</h4>
-                    </li>
-                    <li class="help-item">
-                        <div class="help-logo-transportation"></div>
-                        <h4 class="help-text">Transportation</h4>
-                    </li>
-                    <li class="help-item">
-                        <div class="help-logo-toys"></div>
-                        <h4 class="help-text">Toys</h4>
-                    </li>
-                    <li class="help-item">
-                        <div class="help-logo-cups"></div>
-                        <h4 class="help-text">Bowls and cups</h4>
-                    </li>
-                     <li class="help-item">
-                        <div class="help-logo-shampoos"></div>
-                        <h4 class="help-text">Shampoos</h4>
-                    </li>
-                </ul>
-                </div>
-                <!-- box two -->
-                <div class="help-list-box">
-                    <ul class="help-list-two">
-                        <li class="help-item">
-                            <div class="help-logo-vitamins"></div>
-                            <h4 class="help-text">Vitamins</h4>
-                        </li>
-                        <li class="help-item">
-                            <div class="help-logo-medicines"></div>
-                            <h4 class="help-text">Medicines</h4>
-                        </li>
-                        <li class="help-item">
-                            <div class="help-logo-leashes"></div>
-                            <h4 class="help-text">Collars / leashes</h4>
-                        </li>
-                        <li class="help-item">
-                            <div class="help-logo-sleeping"></div>
-                            <h4 class="help-text">Sleeping areas</h4>
-                        </li>              
-                    </ul>
-                </div>
-
+            <ul class="help__list">
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/icon-pet-food.svg" alt="Pet food icon" width="60" height="60">
+                    </div>
+                    <h4 class="help__text">Pet food</h4>
+                </li>
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/transportation.svg" alt="transportation icon" width="60" height="60">
+                    </div>
+                    <h4 class="help__text">Transportation</h4>
+                </li>
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/icon-toys.svg" alt="toys icon" width="60" height="60">
+                    </div>
+                    <h4 class="help__text">Toys</h4>
+                </li>
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/icon-bowls-and-cups.svg" alt="bowls and cups icon" width="60" height="57">
+                    </div>
+                    <h4 class="help__text">Bowls and cups</h4>
+                </li>
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/icon-shampoos.svg" alt="shampoos icon" width="60" height="60">
+                    </div>
+                    <h4 class="help__text">Shampoos</h4>
+                </li>
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/icon-vitamins.svg" alt="vitamins icon" width="60" height="54">
+                    </div>
+                    <h4 class="help__text">Vitamins</h4>
+                </li>
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/icon-medicines.svg" alt="medicines icon" width="60" height="60">
+                    </div>
+                    <h4 class="help__text">Medicines</h4>
+                </li>
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/icon-collars-leashes.svg" alt="collars or leashes icon" width="60"
+                            height="52">
+                    </div>
+                    <h4 class="help__text">Collars / leashes</h4>
+                </li>
+                <li class="help__item">
+                    <div class="help__icon">
+                        <img src="../../assets/icons/icon-sleeping-area.svg" alt="sleeping area icon" width="56" height="60">
+                    </div>
+                    <h4 class="help__text">Sleeping areas</h4>
+                </li>
+            </ul>
             </div>
         </section>
         <!-- DONATION -->
@@ -142,48 +173,43 @@
             <div class="container">
                 <div class="donation-content">
                     <!-- IMG -->
-                <div class="donation__bg"></div>
-                    <!-- content right -->
-                    <div class="content">
+                <div class="donation__image">
+                    <img src="../../assets/images/donation-dog.png" alt="cute doge">
+                </div>
+                    <!-- content text-->
+                    <div class="donation__content-text">
                         <h3 class="donation-title title">You can also <br> make a donation</h3>
-                        <p class="donation-text title">Name of the bank / Type of bank account</p>
-                        <button class="btn donation-btn" type="button">
-                            <a href="" class="credit-card">8380 2880 8028 8791 7435</a>
-                        </button>
-                        <p class="donation-subtext">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis
+                        <h5 class="donation-subtitle title">Name of the bank / Type of bank account</h5>
+                    <!-- credit-card -->
+                            <a href="" class="donation__credit-card">8380 2880 8028 8791 7435</a>
+                        <!-- </button> -->
+                        <p class="donation-text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis
                         dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis
                         in faucibus.</p>
                     </div>
-
                 </div>
             </div>
-        </section>
-       
+        </section>     
     </main>
-    </div>
    <!-- FOOTER-->
-    <footer>
+    <footer id="footer">
     <section class="footer-section">
         <div class="container">
 
-        <div class="footer-content-all">
+        <div class="footer__content-all">
          <!-- FOOTER COMTACTS-->
-            <div class="footer-contacts">
-                <h3 class="footer-title">For questions and suggestions</h3>
+            <div class="footer__contacts">
+                <h3 class="footer__title">For questions and suggestions</h3>
 
         <!-- <address class="footer-address"> -->
             <ul>
-                <li class="footer-nav">
-                    <a class="footer-link" href="mailto:email@shelter.com">
-                        <!-- <svg class="svg" width="40" height="26">
-                            <use href="../../assets/icons/mail.svg"></use>
-                        </svg> -->
+                <li class="footer__item">
+                    <a class="footer__email footer-link" href="mailto:email@shelter.com">
                         email@shelter.com
-                       
                     </a>
                 </li>
                 <li>
-                    <a class="footer-link" href="tel:+136745677554">
+                    <a class="footer__phone footer-link" href="tel:+136745677554">
                         +13 674 567 75 54
                     </a>
                 </li>
@@ -192,32 +218,25 @@
             </div>
 
         <!-- FOOTER LOCATION-->             
-            <div class="footer-locations">
-                <h3 class="footer-title">We are waiting for your visit</h3>
+            <div class="footer__locations">
+                <h3 class="footer__title location-title">We are waiting for your visit</h3>
              <ul>
-                <li class="footer-nav">
-                    
-                    <a class="footer-link" href="https://goo.gl/maps/DqPnRN1W1mRHGVGPA" 
-                    target="_blank" class="footer-text-margin-link">
-                    <!-- <svg class="svg" width="40" height="26">
-                        <use href="../../assets/icons/pin.svg"></use>
-                    </svg> -->
-        
-                        1 Central Street, Boston (entrance from the store)</a>
+                <li class="footer__item-location">    
+                    <a class="footer__location-link footer-link" href="https://goo.gl/maps/DqPnRN1W1mRHGVGPA" 
+                    target="_blank">      
+                      1 Central Street, Boston (entrance from the store)</a>
                 </li>
-
                 <li>
-                    <a class="footer-link" href="https://goo.gl/maps/DqPnRN1W1mRHGVGPA" target="_blank" class="footer-text-margin-link">18 South
+                    <a class="footer__location-link footer-link" href="https://goo.gl/maps/DqPnRN1W1mRHGVGPA" target="_blank">18 South
                         Park, London</a>
                 </li>
             </ul>
-            </div>
-           
+            </div>     
             <!-- IMG -->
-            <div class="footer__bg"></div>
+            <div class="footer__image">
+                <img src="../../assets/images/footer-puppy.png" alt="cute puppy image">
+            </div>
         </div>
-
-
     </section>
     </footer>
 
