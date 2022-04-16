@@ -263,7 +263,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
 }
 .pets__card {
   display: flex;
@@ -276,7 +276,7 @@ img {
 }
 .button {
   display: inline-block;
-  padding: 13px 43px 13px 43px;
+  padding: 13px 43px;
   font-family: Georgia, serif;
   font-style: normal;
   font-weight: 400;
@@ -462,8 +462,8 @@ img {
 }
 /* ==================== FOOTER ==================== */
 .footer-section {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  // padding-top: 40px;
+  // padding-bottom: 60px;
   background: url(noise_lines_transparent@2X.png),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
 }
@@ -472,7 +472,7 @@ img {
   /* height: 310px; */
   display: flex;
   justify-content: space-between;
-  /* align-items: center;   */
+  align-items: center;
 }
 /* .footer-contacts {
     max-width: 278px;

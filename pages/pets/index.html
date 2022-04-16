@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="header">
         <div class="container header-container">
             <div class="logo">
                 <a href="../main/index.html"></a>
@@ -29,19 +29,109 @@
     </header>
     <main>
         <!-- PETS -->
-        <section class="pets-section ">
+        <section class="pets__section ">
             <div class="container">
-                <h3 class="pets-title title">Our friends who <br>
+                <h3 class="pets__title">Our friends who <br>
                     are looking for a house</h3>
+                    <!-- card -->
+                <div class="pets__content-card">  
+                    <div class="pets__card">                     
+                        <img src="../../assets/images/pets-katrine.png" alt="katrine image">     
+                        <p class="pets__name">Katrine</p>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">
+                            <img src="../../assets/images/pets-jennifer.png" alt="jennifer image">
+                        <p class="pets__name">Jennifer</p>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">                     
+                            <img src="../../assets/images/pets-woody.png" alt="woody image">
+                        <p class="pets__name">Woody</p>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">                    
+                            <img src="../../assets/images/pets-sophia.png" alt="woody image">
+                        <p class="pets__name">Sophia</p>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">                     
+                            <img src="../../assets/images/pets-timmy.png" alt="woody image">
+                        <p class="pets__name">Timmy</p>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">
+                            <img src="../../assets/images/pets-charly.png" alt="woody image">
+                        <p class="pets__name">Charly</p>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">
+                        <img src="../../assets/images/pets-scarlet.png" alt="woody image">
+                        <p class="pets__name">Scarlet</p>
+                        <button class="button">Learn more</button>
+                    </div>
+                    <div class="pets__card">
+                            <img src="../../assets/images/pets-freddie.png" alt="woody image">
+                        <p class="pets__name">Freddie</p>
+                        <button class="button">Learn more</button>
+                    </div>
+                </div>
+                <!-- pets__navigation -->
+                    <nav class="pets__navigation">
+                        <button class="btn-paginator btn-paginator_inactive">&lt;&lt;</button>
+                        <button class="btn-paginator btn-paginator_inactive">&lt;</button>
+                        <button class="btn-paginator selected">1</button>
+                        <button class="btn-paginator btn-paginator_active">&gt;</button>
+                        <button class="btn-paginator btn-paginator_active">&gt;&gt;</button>
+                    </nav>
             </div>
         </section>
-
-        
-
     </main>
+    <!-- FOOTER-->
+    <footer id="footer">
+        <section class="footer-section">
+            <div class="container">
+                <div class="footer__content-all">
+                    <!-- FOOTER COMTACTS-->
+                    <div class="footer__contacts">
+                        <h3 class="footer__title">For questions and suggestions</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a class="footer__email footer-link" href="mailto:email@shelter.com">
+                                    email@shelter.com
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__phone footer-link" href="tel:+136745677554">
+                                    +13 674 567 75 54
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-    <footer>
-
+                    <!-- FOOTER LOCATION-->
+                    <div class="footer__locations">
+                        <h3 class="footer__title location-title">We are waiting for your visit</h3>
+                        
+                        <ul>
+                            <li class="footer__location-item">
+                                <a class="footer__location-link footer-link" href="https://goo.gl/maps/DqPnRN1W1mRHGVGPA"
+                                    target="_blank">
+                                    1 Central Street, Boston (entrance from the store)</a>
+                            </li>
+                            <li>
+                                <a class="footer__location-link footer-link" href="https://goo.gl/maps/DqPnRN1W1mRHGVGPA"
+                                    target="_blank">18 South
+                                    Park, London</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- IMG -->
+                    <div class="footer__image">
+                        <img src="../../assets/images/footer-puppy.png" alt="cute puppy image">
+                    </div>
+                </div>
+        </section>
     </footer>
 
     <script type="module" src="./index.js"></script>
